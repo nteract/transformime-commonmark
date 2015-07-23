@@ -2,7 +2,7 @@
 
 var commonmark = require("commonmark");
 
-export class MarkdownTransformer {
+export default class MarkdownTransformer {
     constructor() {
         this.reader = new commonmark.Parser();
         this.writer = new commonmark.HtmlRenderer({
