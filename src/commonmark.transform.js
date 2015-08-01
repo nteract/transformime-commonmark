@@ -2,23 +2,25 @@
 
 var commonmark = require("commonmark");
 
-function markdownTransform(mimetype, data, document) {
-    var div = document.createElement("div");
-
+var markdownTransform = function(){
     let reader = new commonmark.Parser();
     let writer = new commonmark.HtmlRenderer({
         safe: true
     });
 
-    var parsed = reader.parse(data);
+    return function(mimetype, data, document) {
+        var div = document.createElement("div");
 
-    // TODO: Any other transformations on the parsed object
-    // See https://github.com/jgm/commonmark.js#usage
+        var parsed = reader.parse(data);
 
-    div.innerHTML = writer.render(parsed);
+        // TODO: Any other transformations on the parsed object
+        // See https://github.com/jgm/commonmark.js#usage
 
-    return div;
-}
+        div.innerHTML = writer.render(parsed);
+
+        return div;
+    };
+}();
 
 markdownTransform.mimetype = 'text/markdown';
 
