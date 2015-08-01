@@ -2,7 +2,7 @@ import {assert} from 'chai';
 
 import {jsdom} from 'jsdom';
 
-var markdownTransform = require('../src/commonmark.transformer');
+var markdownTransform = require('../src/commonmark.transform');
 
 describe('text transformer', function() {
     beforeEach(function() {
