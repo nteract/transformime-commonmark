@@ -3,6 +3,8 @@
 var commonmark = require("commonmark");
 
 var markdownTransform = function(){
+    // Stick reader and writer in a closure so they only get created once.
+
     let reader = new commonmark.Parser();
     let writer = new commonmark.HtmlRenderer({
         safe: true
