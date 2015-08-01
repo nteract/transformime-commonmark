@@ -1,6 +1,6 @@
 {
   "name": "transformime-commonmark",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Transforms Markdown to HTML Elements, adhering to the transformime interface",
   "main": "lib/commonmark.transform.js",
   "scripts": {
