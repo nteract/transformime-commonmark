@@ -1,4 +1,4 @@
-# transformime-commonmark
+## Deprecated: This transformer is now part of [transformime](https://github.com/nteract/transformime)
 
 Transformer using commonmark.js
 
