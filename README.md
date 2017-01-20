@@ -1,5 +1,7 @@
 ## Deprecated: This transformer is now part of [transformime](https://github.com/nteract/transformime)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nteract/transformime-commonmark.svg)](https://greenkeeper.io/)
+
 Transformer using commonmark.js
 
 ```
